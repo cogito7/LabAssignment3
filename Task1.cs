@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using System;
 
-
 public class Task1 : MonoBehaviour
 {
     public string courseName;
-    [Range(1, 10)] public int numModules;
-    [Range(1, 10)] public int numReadings;
-    [Range(1, 10)] public int numQuizzes;
-    [Range(1, 10)] public int numAssignments;
+    [Range(0, 10)] public int numModules;
+    [Range(0, 10)] public int numReadings;
+    [Range(0, 10)] public int numQuizzes;
+    [Range(0, 10)] public int numAssignments;
     public bool isInstructorNonRookie;
     private double challengeScore;
 
@@ -40,7 +39,6 @@ public class Task1 : MonoBehaviour
         //outputs name and challengeScore
         Debug.Log(courseName + " has a difficulty rating of " + challengeScore * 10 + "/10.");
     }
-
 
     // Update is called once per frame
     void Update()
