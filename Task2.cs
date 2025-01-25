@@ -5,7 +5,6 @@ public class Task2 : MonoBehaviour
     public double originalPriceX;
     public double numberOfCopiesY;
     public bool isBookstore;
-
     private double bookCost;
     private double shippingCost;
     private double totalCost;
