@@ -10,9 +10,6 @@ public class Task3 : MonoBehaviour
     private int tens;
     private int fives;
     private int ones;
-
-
-    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +31,6 @@ public class Task3 : MonoBehaviour
         paidDollarsX %= 5;
 
         ones = paidDollarsX;
-
 
         //print to the console how many of each dollar amount for each dollar bill type.
         if (hundreds > 0)
@@ -66,8 +62,6 @@ public class Task3 : MonoBehaviour
         {
             Debug.Log("1 bills: " + ones);
         }
-
-
         
     }
 
